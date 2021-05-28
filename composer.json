@@ -1,0 +1,28 @@
+{
+    "name": "fflch/laravel-fflch-pdf",
+    "minimum-stability": "dev",
+    "description": "fflch pdf for laravel",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Thiago Gomes Verissimo",
+            "email": "thiago.verissimo@usp.br"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fflch\\LaravelFflchPdf\\LaravelFflchPdfServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4" : {
+            "Fflch\\LaravelFflchPdf\\" : "src"
+        }
+    },
+    "require": {
+        "barryvdh/laravel-dompdf": "^0.8.6"
+    }
+}
