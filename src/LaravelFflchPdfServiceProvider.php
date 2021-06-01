@@ -19,6 +19,7 @@ class LaravelFflchPdfServiceProvider extends ServiceProvider
         Dispatcher $events,
         Repository $config
     ) {
+        $this->publishConfig();
         $this->loadViews();
         $this->publishAssets();
     }
@@ -53,5 +54,13 @@ class LaravelFflchPdfServiceProvider extends ServiceProvider
             $this->packagePath('resources/assets') => public_path('vendor/laravel-fflch-pdf'),
         ], 'assets');
     }
+    
+        private function publishConfig()
+        {
+            $configPath = $this->packagePath('config/laravel-fflch-pdf.php');
+            $this->publishes([
+                $configPath => config_path('laravel-fflch-pdf.php'),
+            ], 'config');
+        }
 
 }
