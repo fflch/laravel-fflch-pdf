@@ -48,7 +48,7 @@
 				<td style='width:80%'; style='text-align:center;'>
 					<p align='center'><b>FACULDADE DE FILOSOFIA, LETRAS E CIÊNCIAS HUMANAS</b>
 					<br>Universidade de São Paulo<br>
-					Serviço de Assistência ao Ensino de Graduação</p>
+					{{ config('laravel-fflch-pdf.setor') }}</p>
 				</td>
 			</tr>
 		</table>
