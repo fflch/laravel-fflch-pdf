@@ -2,6 +2,10 @@ Regiões:
 
     content
     footer
+    
+Configuração:
+
+    php artisan vendor:publish --provider="Barryvdh\DomPDF\ServiceProvider"
 
 No seu blade:
 
