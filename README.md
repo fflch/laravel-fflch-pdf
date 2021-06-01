@@ -6,10 +6,15 @@ Regiões:
 Configuração:
 
     php artisan vendor:publish --provider="Barryvdh\DomPDF\ServiceProvider"
+    php artisan vendor:publish --provider="Fflch\LaravelFflchPdf\LaravelFflchPdfServiceProvider"
 
 Em config/dompdf.php:
 
     "enable_php" => true
+
+No seu .env:
+
+    FFLCHPDF_SETOR='Setor de Graduação'
 
 No seu blade:
 
