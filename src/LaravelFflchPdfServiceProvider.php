@@ -21,7 +21,7 @@ class LaravelFflchPdfServiceProvider extends ServiceProvider
     ) {
         $this->publishConfig();
         $this->loadViews();
-        $this->publishAssets();
+        #$this->publishAssets();
     }
 
     /**
