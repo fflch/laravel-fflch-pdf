@@ -36,6 +36,7 @@
             margin-top:0px;
         }
     </style>
+	@yield('other_styles')
 </head>
 
 <body>
@@ -55,18 +56,16 @@
 	<hr>
 	</header>
 
+	<div class="content" style="margin-bottom: 52px; margin-right: 15px; overflow-wrap: break-word"> 
+		@yield('content')
+	</div>
+
 	<footer>
 		<div class="footer">
     		<hr>
     		@yield('footer')
 		</div>
 	</footer>
-
-	<div class="content" style="margin-bottom: 52px; margin-right: 15px; overflow-wrap: break-word"> 
-		@yield('content')
-	</div>
-
-    <div id="footer" class="footer"> @yield('footer') </div>
 
 	<script type="text/php">
 	if ( isset($pdf) ) {
