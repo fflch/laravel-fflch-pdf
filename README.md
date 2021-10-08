@@ -6,7 +6,11 @@ Biblioteca padronizada para modelo de PDF da FFLCH
 ## Regiões:
 - content
 - footer
-    
+
+## Instalação:
+```bash
+ composer require fflch/laravel-fflch-pdf
+```
 ## Configuração e  Uso:
 
 - Faça a publicação das configurações base
