@@ -24,7 +24,8 @@
 		<table style='width:100%'>
 			<tr>
 				<td style='width:20%' style='text-align:left;'>
-					<img src='https://www.fflch.usp.br/themes/contrib/fflch-theme/images/logo.png' width='100px'/>
+				<img src="{{'data:image/png;base64,' . base64_encode(file_get_contents(base_path() . '/vendor/fflch/laravel-fflch-pdf/images/logo90anos.png'))}}" width='100px' />
+
 				</td>
 				<td style='width:80%'; style='text-align:center;'>
 					<p align='center'><b>FACULDADE DE FILOSOFIA, LETRAS E CIÊNCIAS HUMANAS</b>
