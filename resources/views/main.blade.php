@@ -4,14 +4,36 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
 	<style>
-        @page { margin-top: 120px; margin-bottom: 120px}
-		header { position: fixed; left: 0px; top: -90px; right: 0px; height: 150px; text-align: center; }
-		#footer { position: fixed; left: 0px; bottom: -145px; right: 0px; height: 150px; }
+        @page {
+			margin-top: 150px; 
+			margin-bottom: 150px
+		}
+		header {
+			position: fixed;
+			left: 0px;
+			top: -120px;
+			right: 0px;
+			height: 120px;
+			text-align: center;
+			width: 100%;
+			margin-top: 0px;
+			margin-bottom: 10px;
+		}
+		#footer {
+			position: fixed;
+			left: 0px;
+			bottom: -120px;
+			right: 0px;
+			height: 120px;
+			width: 100%; 
+		}
         .page-break {
-            page-break-after: always;
-            margin-top:160px;
+			page-break-after: always;
+			margin-top:160px;
         }
-        .page-break:last-child { page-break-after: never; }
+        .page-break:last-child {
+			page-break-after: never; 
+		}
         .content {
             margin-top:0px;
         }
@@ -20,12 +42,11 @@
 </head>
 
 <body>
-	<header style="width: 100%; margin-top: 0px; margin-bottom: 10px;">
-		<table style='width:100%'>
+	<header>
+		<table style='width:100%;'>
 			<tr>
 				<td style='width:20%' style='text-align:left;'>
 				<img src="{{'data:image/png;base64,' . base64_encode(file_get_contents(base_path() . '/vendor/fflch/laravel-fflch-pdf/images/logo90anos.png'))}}" width='100px' />
-
 				</td>
 				<td style='width:80%'; style='text-align:center;'>
 					<p align='center'><b>FACULDADE DE FILOSOFIA, LETRAS E CIÊNCIAS HUMANAS</b>
@@ -37,7 +58,7 @@
 	<hr>
 	</header>
 
-	<footer style="width: 100%;" id="footer">
+	<footer id="footer">
     	<hr>
     	@yield('footer')
 	</footer>
